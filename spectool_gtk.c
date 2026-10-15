@@ -366,7 +366,8 @@ static void add_tab(gpointer *data, gpointer *aux) {
 
 static GtkItemFactoryEntry main_menu_items[] = {
 	{ "/_SpecAn",			NULL,			NULL,	0, "<Branch>" },
-	{ "/SpecAn/Add Device", "<control>A", add_tab, 0, "<Item>" },
+  // Lloyd Henning: comment out as it stops it compiling
+	// { "/SpecAn/Add Device", "<control>A", add_tab, 0, "<Item>" },
 	{ "/SpecAn/_Quit",		"<control>Q",	gtk_main_quit, 0, "<Item>" },
 };
 
